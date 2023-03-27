@@ -128,3 +128,23 @@ final class RMTabbarController: UITabBarController {
         )
 ```
 
+### Set up Icons
+
+<img width="300" alt="スクリーンショット 2023-03-27 14 05 55" src="https://user-images.githubusercontent.com/47273077/227845720-50ff35f5-087c-44a6-9d07-9a328e43dce1.png">
+
+RMTabbarController.swift
+```swift
+        nav1.tabBarItem = UITabBarItem(title: "Characters",
+                                       image: UIImage(systemName: "person"),
+                                       tag: 1)
+        nav2.tabBarItem = UITabBarItem(title: "Locations",
+                                       image: UIImage(systemName: "globe"),
+                                       tag: 2)
+        nav3.tabBarItem = UITabBarItem(title: "Episodes",
+                                       image: UIImage(systemName: "tv"),
+                                       tag: 3)
+        nav4.tabBarItem = UITabBarItem(title: "Settings",
+                                       image: UIImage(systemName: "gear"),
+                                       tag: 4)
+```
+
