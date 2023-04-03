@@ -148,3 +148,48 @@ RMTabbarController.swift
                                        tag: 4)
 ```
 
+## [Build FULL iOS App in Swift: Part 2 (Rick & Morty | 2023) – Source Control](https://www.youtube.com/watch?v=rL9Z2y3lvd4&list=PL5PR3UyfTWvdl4Ya_2veOB6TM16FXuv4y&index=2)
+
+RMService.swift
+```swift
+/// Primary API service object to get Flick and Morty data
+final class RMServive {
+    /// Shared singlton instance
+    static let shared = RMServive()
+    
+    /// Privatized constructer
+    private init() {}
+    
+    /// Send Rick and Morty API Call
+    /// - Parameters:
+    ///   - request: Request Instance
+    ///   - completion: Callback with data or error
+    public func execute(_ request: RMRequest, completion: @escaping () -> Void) {
+        
+    }
+}
+```
+
+RMEndpoint.swift
+```swift
+import Foundation
+
+/// Represents unique AP
+@frozen enum RMEndpoint: String {
+    /// Endpoint to get character info
+    case character
+    /// Endpoint to get location info
+    case location
+    /// Endpoint to get episode info
+    case episode
+}
+
+```
+
+RMRequest.swift
+```swift
+/// Object that reprents a single API call
+final class RMRequest {
+    
+}
+```
